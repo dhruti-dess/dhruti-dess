@@ -44,6 +44,59 @@ Welcome to my GitHub profile! I'm a recent graduate with a **Bachelor of Science
    - User profiles
    - Like functionality for posts
    - Responsive design
+ 
+### 🌟 **Accounts Project**
+- **Description**: A Python-based **account management system** where users can create, view, and update their account details securely.
+- **Technologies**: Python
+- **Key Features**:
+   - User registration and login
+   - Account details management
+   - Secure password handling using Python libraries
+   - Data validation and error handling
+
+### 🌟 **Get to Know You Project**
+- **Description**: A Python application where users answer a series of questions to learn more about their personal preferences and interests.
+- **Technologies**: Python
+- **Key Features**:
+   - Quiz with multiple-choice questions
+   - Personalized feedback based on user input
+   - Dynamic result generation based on answers
+
+### 🌟 **Ken Griffey Project**
+- **Description**: A Python project that displays **Ken Griffey Jr.'s career highlights**, stats, and achievements in a simple text-based interface.
+- **Technologies**: Python
+- **Key Features**:
+   - Displaying career stats and highlights
+   - Interactive menu for users to explore different sections (e.g., stats, milestones)
+   - Text-based user interface
+
+### 🌟 **Simple Introduction Project**
+- **Description**: A Python-based application where users can create a simple **personal introduction**, providing a brief description and uploading an image (if applicable).
+- **Technologies**: Python
+- **Key Features**:
+   - Text-based user profile creation
+   - Simple introduction text and image handling
+   - Console-based output
+
+### 🌟 **Bike Shop Project**
+- **Description**: A .NET project focused on building a **bike shop management system** for tracking inventory, sales, and customer information.
+- **Technologies**: .NET, C#, XAML
+- **Key Features**:
+   - Inventory management for bikes and accessories
+   - Sales tracking and reporting
+   - Customer information management
+   - Admin dashboard for managing orders and stock
+   - XAML-based user interface for a responsive, interactive experience
+
+### 🌟 **Flower Shop Project**
+- **Description**: A .NET project that builds a **flower shop management system**, allowing users to browse products, place orders, and manage inventory.
+- **Technologies**: .NET, C#, XAML
+- **Key Features**:
+   - Product catalog with flower categories
+   - Order management and customer interaction
+   - Inventory control and stock updates
+   - Admin panel for product and order management
+   - XAML-based user interface for dynamic interaction and customization
 
 ---
 
