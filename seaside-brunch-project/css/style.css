@@ -1,0 +1,224 @@
+body {
+    background-image: url(/img/blue-ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+    border: solid 2px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: black;
+    opacity: 50%;
+    font-family: 'Gruppo', sans-serif;
+}
+
+h2 {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 25px;
+}
+
+.navigation {
+    color: #D8EDF2;
+    background-color: #78c5da;
+    border-style: solid;
+    border-color: #1fa9c4;
+    padding: 1%;
+    word-spacing: 10px;
+    text-align: center;
+    opacity: 70%;
+}
+
+/* I used a: to change the colors of the links when certain events happen so they look a bit more aesthetic and cute */
+a:link {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+a:visited {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 22px;
+    border-style: solid;
+    border-color: #2f6c7a;
+}
+
+.welcome {
+    color: #ffffff;
+    border: solid 2px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgb(33, 92, 116);
+    opacity: 50%;
+}
+
+button {
+    background-color: #55b9de;
+    border: ridge;
+    font-size: 23px;
+    color: white;
+    padding: 0.5%;
+    opacity: 50%;
+    cursor: pointer;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.story,
+.food,
+.dance {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgb(169, 230, 239);
+    opacity: 70%;
+}
+
+/* I used css to make the input fields and select fields prettier*/
+.contact input {
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    border: .05px white double;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+}
+
+.questions select {
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: rgb(131, 191, 232);
+    border: .05px white double;
+    text-align: center;
+    font-family: 'Arsenal', sans-serif;
+    background-color: rgb(152, 224, 231);
+    opacity: 80%;
+}
+.contact {
+    color: #ffffff;
+    border: solid 2px;
+    margin-left: 36%;
+    margin-right: 36%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    background-color: rgb(115, 179, 199);
+    opacity: 60%;
+}
+
+.contact button {
+    opacity: 100%;
+}
+
+.call {
+    color: #ffffff;
+    border: solid 2px;
+    margin-left: 36%;
+    margin-right: 36%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.desserts {
+    color: rgb(233, 251, 252);
+}
+
+.bruschetta,
+.salad,
+.toast,
+.nachos,
+.pizza,
+.salmon,
+.gnocchi,
+.burger,
+.cheesecake,
+.cake,
+.lava-cake,
+.french-toast {
+    width: 500px;
+    height: 333px;
+    display: none; /* this hides the image by default */
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.bruschetta.hide,
+.salad.hide,
+.toast.hide,
+.nachos.hide,
+.pizza.hide,
+.salmon.hide,
+.gnocchi.hide,
+.burger.hide,
+.cheesecake.hide,
+.cake.hide,
+.lava-cake.hide,
+.french-toast.hide {
+    display: block; /* this hides the image by default */
+}
+
+/* this makes it so when the icons are clicked the image is shown*/
+.starters .toggleBtn::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+.starters .toggleBtn.hide::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+.mains .toggleBtn::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+.mains .toggleBtn.hide::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+.desserts .toggleBtn::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+.desserts .toggleBtn.hide::before {
+    content: '\f030';
+    font-family: fontAwesome;
+    cursor: pointer;
+}
+
+/* this changes the sizes of the images that are on the index.html page*/
+img {
+    width: 500px;
+    height: 333px;
+}
