@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+            <nav class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link">
+                            <i class="fa-sharp fa-solid fa-house fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/profile.html" class="nav-link">
+                            <i class="fa-solid fa-user fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/edit-profile.html" class="nav-link">
+                            <i class="fa-solid fa-user-pen fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Edit Profile
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/clothing.html" class="nav-link">
+                            <i class="fa-sharp fa-solid fa-shirt fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Clothing
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/jewelry.html" class="nav-link">
+                            <i class="fa-sharp fa-solid fa-gem fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Jewelry
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/shoes.html" class="nav-link">
+                            <i class="fa-solid fa-shoe-prints fa-2x" style="color: #ffffff;"></i>
+                            &nbsp;
+                            <span class="link-text">
+                                Shoes
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                <main>
+                    <div class="headers">
+                    <h1>Edit Profile</h1>
+                    </div>
+                    <hr>
+                    <div class="preProfile">
+                        <img id="profilePicture" src="img/default.png" alt="Default Picture">
+                    </div>
+                    <div class="editProfilePic">
+                            <h3>Choose a profile picture:</h3>
+                            <img class="profile-picture" src="img/elephant.png" alt="Elephant Profile Picture" onclick="profilePic('img/elephant.png')">
+                            <img class="profile-picture" src="img/bunny.png" alt="Bunny Profile Picture" onclick="profilePic('img/bunny.png')">
+                            <img class="profile-picture" src="img/honey-bee.png" alt="Honey-Bee Profile Picture" onclick="profilePic('img/honey-bee.png')">
+                            <img class="profile-picture" src="img/penguin.png" alt="Penguin Profile Picture" onclick="profilePic('img/penguin.png')">
+                            <img class="profile-picture" src="img/cat.png" alt="Cat Profile Picture" onclick="profilePic('img/cat.png')">
+                            <img class="profile-picture" src="img/unicorn.png" alt="Unicorn Profile Picture" onclick="profilePic('img/unicorn.png')">
+                            <img class="profile-picture" src="img/cat2.png" alt="Cat Profile Picture" onclick="profilePic('img/cat2.png')">
+                            <img class="profile-picture" src="img/panda.png" alt="Panda Profile Picture" onclick="profilePic('img/panda.png')">
+                            <img class="profile-picture" src="img/panda2.png" alt="Panda Profile Picture" onclick="profilePic('img/panda2.png')">
+                            <img class="profile-picture" src="img/cat3.png" alt="Cat Profile Picture" onclick="profilePic('img/cat3.png')">
+                    </div>
+                    <div class="editProfile"><br>
+                        <p>Fill this out if you'd like!*</p>
+                        <label for="firstName" class="firstName">
+                            <input type="text" id="firstName" class="info" placeholder="First Name">
+                        </label><br><br>
+                        <label for="lastName" class="lastName">
+                            <input type="text" id="lastName" class="info" placeholder="Last Name">
+                        </label><br><br>
+                        <label for="email" class="email">
+                            <input type="text" id="email" class="info" placeholder="Email Address">
+                        </label><br><br>
+                        <label for="phone" class="phone">
+                            <input type="text" id="phone" class="info" placeholder="Phone Number">
+                        </label><br><br>
+                            <button type="button" onclick="submitInfo()">Submit</button>
+                        <p id="editProfileFinished"></p>
+                    </div>
+                    <hr>
+                    <div class="disclaimer">
+                        <p>*This is a disclaimer that you are not being forced to fill out any of this information. You may continue to use the site without submitting your information. Your name and information will be kept to ourselves and will not be given out to anyone. This site has the profile option to create an experiencial inspiration center.
+                        </p>
+                        <p> If you do provide your email address and/or phone number, we will sign you up for marketing messages and newsletters for when we update the site. Keep in mind, that you can unsubscribe from both after submitting your information. Do not reply to these messages unless you wish to unsubscribe. There will also be links to new things to try out as we expand our site.
+                        </p>
+                        <p>Your profile is as important as you make it. You can keep all you information to yourself if that is what you would like. There is no pressure for you release information. Our site is accessible for anyone to use. Our content is PG.
+                        </p>
+                        <p>If you do choose to partake in the profile experience there are some things to keep in mind. You can change your name whenever you want right on this page! You can also change your profile picture whenever you would like. All of our profile pictures are curated drawings by amazing cartoon animal artists!
+                        </p>
+                    </div>
+                </main>
+    </div>
+    
+    <script src="js/scripts.js "></script>
+</body>
+</html>

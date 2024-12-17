@@ -1,0 +1,286 @@
+:root {
+    font-size: 16px;
+    --transition-speed: 600ms;
+}
+
+body {
+    color: #C76C67;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE5E1;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #c17892;
+    transition: width 200ms ease;
+    background-image: url(/img/navbar-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+/* this changes the icon styling in the navbar */
+.nav-link i {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+/* when you hover over the bar bar it expands to 16rem */
+.navbar:hover {
+    width: 16rem;
+}
+
+/* this makes it so the nav text doesnt show unless your hovering over it */
+.navbar:hover .link-text {
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: #C76C67;
+}
+
+.siteName {
+    text-align: center;
+    color: #612740;
+    font-size: 30px;
+    border: solid 1px;
+    border-color: #C76C67;
+    background-color: rgba(241, 191, 199, 0.664);
+    font-family: 'Cinzel', serif;
+}
+
+.link-text {
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-weight: bold;
+}
+
+.introSite p {
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+.disclaimer p {
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+.profileInfo p {
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+p {
+    font-family: 'Arima', cursive;
+}
+.headers {
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+}
+
+.editProfile {
+    color: #ffffff;
+    border: solid 2px;
+    padding-top: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-right: 74%;
+    background-color: #C76C67;
+    font-family: 'Arima', cursive;
+}
+
+.editProfile input{
+    width: 95%;
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+.editProfile button {
+    color: #612740;
+    margin-left: 33%;
+    font-family: 'Arima', cursive;
+}
+
+.editProfilePic {
+    margin-right: 30%;
+    font-family: 'Arima', cursive;
+}
+
+.preProfile #profilePicture {
+    width: 170px;
+    height: 170px;
+    border: solid 3px;
+    border-radius: 50%;
+    color: white;
+}
+
+.profileHeader h2 {
+    font-size: 60px;
+    color: #C76C67;
+}
+
+.profileHeader {
+    display: flex;
+    font-family: 'Bad Script', cursive;
+}
+
+.preProfile2 #profilePicture {
+    width: 170px;
+    height: 170px;
+    border: solid 3px;
+    border-radius: 50%;
+    color: white;
+}
+
+.preProfile2 {
+    text-align: right;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.bio button {
+    color: #c17892;
+    font-size: large;
+    border: solid 1px;
+    background-color: white;
+    border-radius: 10px;
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+.bio {
+    color: #612740;
+    font-family: 'Arima', cursive;
+}
+
+.intro {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: 'Arima', cursive;
+}
+
+.interests {
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: 'Arima', cursive;
+}
+
+hr {
+    color: white;
+}
+
+.otherPosts img {
+    width: 35%;
+    height: 35%;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.otherPosts {
+    border: 2px double;
+    border-color: #C76C67;
+    background-color: #f3cad5;
+    text-align: center;
+}
+
+.caption {
+    bottom: 0;
+    left: 0;
+    width: 97.9%;
+    background-color: rgba(102, 14, 42, 0.457);
+    color: #ffffff;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.indivClothing:hover .caption {
+    opacity: 1;
+}
+
+.indivJewelry:hover .caption {
+    opacity: 1;
+}
+
+.indivShoes:hover .caption {
+    opacity: 1;
+}
+
+.caption p {
+    margin: 0;
+}
+
+.likeButton {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/* to change the button's icon color */
+.likeButton i {
+    color: rgb(220, 77, 115)
+}
+
+.likeButton:hover {
+    background-color: #f3f3f3;
+}
+
+.changeColor {
+    color: rgb(220, 77, 115) /* this is the color that clicking the like button per post 2 or more times will trigger. */
+}
